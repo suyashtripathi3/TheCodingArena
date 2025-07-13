@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="S-A-C_Responsive.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: lavenderblush;
+        }
+
+        .nvbr {
+            height: 80px;
+        }
+
+        .navbar {
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+        }
+
+        .navbar::before {
+            background-image: url("backgroundimg3.jpg");
+            content: "";
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 80px;
+            opacity: 0.99;
+            z-index: -1;
+        }
+
+        img {
+            width: 70px;
+            margin: 5px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        .item {
+            /* border: 2px solid green; */
+            display: inline-block;
+            margin: 5px 15px;
+            padding: 3px;
+            border-radius: 8px;
+            font-size: 22px;
+            color: white;
+            transition: all .2s ease-in-out;
+
+        }
+
+        .item:hover {
+            background-color: tomato;
+            color: black;
+            transform: scale(1.1);
+
+        }
+
+        .srch-bar {
+            float: right;
+            margin-left: 380px;
+        }
+
+        input {
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 2px;
+            background-color: bisque;
+            color: darkslategray;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 2px;
+            border-radius: 5px;
+            background-color: tomato;
+        }
+
+        .btn:hover {
+            /* background-color: burlywood; */
+            cursor: pointer;
+        }
+
+
+        .head {
+            font-size: 2.5rem;
+            margin: 10px 0px;
+            text-align: center;
+        }
+
+        .sr-para {
+            /* border: 2px solid lightsalmon; */
+            /* border-radius: 5px; */
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+            /* background-color: bisque; */
+            /* margin: 5px 7px; */
+            padding: 2px 10px;
+            width: 97%;
+            /* height: 320px;*/
+
+        }
+
+        .para-ser {
+            padding: 1px 10px;
+            margin: 0px;
+        }
+
+        .sr-img {
+            border-radius: 5px;
+            /* height: 200px; */
+            width: 300px;
+            margin: 0px;
+        }
+
+        .servi-topics {
+            font-size: 1.5rem;
+            margin: 7px 9px;
+        }
+
+        .topics {
+            display: flex;
+            justify-content: center;
+            /* flex-direction: column; */
+            align-items: center;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: flex;
+            width: 18%;
+            height: 390px;
+            /* justify-content: center; */
+            padding: 10px;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            background: linear-gradient(120deg, rgb(214, 107, 88) 40%, lightsalmon 60%);
+            margin: 20px;
+            transition: all .2s ease-in-out;
+            top: 0px;
+
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+
+        }
+
+        .box-img {
+            height: 130px;
+            width: 220px;
+            border-radius: 10px;
+            margin: 0px;
+            margin-top: 10px;
+            /* padding: 10px 10px; */
+
+        }
+
+        .box-para {
+            font-size: 15px;
+
+        }
+
+        .center {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            height: 30px;
+        }
+
+        /* Responsive CSS */
+        @media screen and (max-width:1334px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 8px;
+                font-size: 22px;
+            }
+
+            .srch-bar {
+                margin-left: 330px;
+            }
+
+            .box {
+                width: 18%;
+                height: 370px;
+                padding: 9px;
+                margin: 16px;
+
+            }
+
+            .box-img {
+                height: 110px;
+                width: 200px;
+                border-radius: 10px;
+                margin: 0px;
+                margin-top: 10px;
+                /* padding: 10px 10px; */
+
+            }
+
+            .box-para {
+                margin: 0px;
+                padding: 7px 2px;
+            }
+        }
+
+        @media screen and (max-width:1220px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 8px;
+                font-size: 20px;
+            }
+
+            .srch-bar {
+                margin-left: 260px;
+            }
+
+            .box {
+                width: 18%;
+                height: 400px;
+                padding: 9px;
+                margin: 16px;
+
+            }
+
+            .box-img {
+                height: 110px;
+                width: 200px;
+                border-radius: 10px;
+                margin: 0px;
+                margin-top: 10px;
+                /* padding: 10px 10px; */
+
+            }
+
+            .box-para {
+                /* font-size: 13px; */
+                margin: 0px;
+                padding: 7px 2px;
+            }
+        }
+
+        @media screen and (max-width:1120px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 6px;
+                font-size: 18px;
+            }
+
+            .srch-bar {
+                margin-left: 190px;
+            }
+
+            .topics {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .box {
+                width: 40%;
+                height: 370px;
+                padding: 9px;
+                margin: 16px;
+                justify-content: center;
+                /* display: flex; */
+            }
+
+            .box-img {
+                height: 200px;
+                width: 400px;
+                border-radius: 10px;
+                margin: 0px;
+                margin-top: 10px;
+                /* padding: 10px 10px; */
+
+            }
+
+            .box-para {
+                margin: 0px;
+                padding: 7px 2px;
+            }
+        }
+
+        @media screen and (max-width:1010px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+            }
+            ul{
+                padding-left: 5px;
+            }
+            img {
+                width: 68px ;
+            }
+
+            .item {
+                font-size: 1.2rem;
+            }
+
+            .srch-bar {
+                display: none;
+            }
+            .head{
+                font-size: 2.1rem;
+            }
+            .sr-para{
+                flex-direction: column;
+            }
+            .servi-topics{
+                font-size: 1.3rem;
+            }
+
+            .box {
+                width: 50%;
+                height: 400px;
+                padding: 9px;
+                margin: 16px;
+                justify-content: center;
+                /* display: flex; */
+            }
+
+            .box-img {
+                height: 200px;
+                width: 340px;
+                border-radius: 10px;
+                margin: 0px;
+                margin-top: 0px;
+                /* padding: 10px 10px; */
+
+            }
+
+            .box-para {
+                margin: 0px;
+                padding: 7px 2px;
+            }
+        }
+        @media screen and (max-width:700px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            img {
+                width: 60px ;
+                margin: 0px;
+            }
+
+            .item {
+                font-size: 18px;
+            }
+
+            .srch-bar {
+                display: none;
+            }
+            .head{
+                font-size: 1.8rem;
+            }
+            .sr-para{
+                flex-direction: column;
+            }
+            
+            .servi-topics{
+                font-size: 1rem;
+            }
+
+            .box {
+                width: 50%;
+                height: 300px;
+                padding: 9px;
+                margin: 16px;
+                justify-content: start;
+                /* display: flex; */
+            }
+
+            .box-img {
+                height: 150px;
+                width: 220px;
+                border-radius: 10px;
+                margin: 0px;
+                margin-top: 5px;
+                /* padding: 10px 10px; */
+
+            }
+
+            .box-para {
+                font-size: 12px;
+                margin: 0px;
+                padding: 7px 2px;
+            }
+            .center{
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width:440px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+            }
+            img {
+                width: 50px ;
+            }
+
+            .item {
+                font-size: 16px;
+                margin: 4px;
+            }
+
+            .srch-bar {
+                display: none;
+            }
+            .sr-img{
+                width: 200px;
+            }
+            .sr-para{
+                flex-direction: column;
+            }
+            .servi-topics{
+                font-size: 0.9rem;
+            }
+
+            .box {
+                width: 59%;
+                height: 300px;
+                padding: 9px;
+                margin: 16px;
+                justify-content: start;
+                /* display: flex; */
+            }
+
+            .box-img {
+                height: 110px;
+                width: 180px;
+                border-radius: 10px;
+                margin: 0px;
+                margin-top: 5px;
+                /* padding: 10px 10px; */
+
+            }
+
+            .box-para {
+                font-size: 12px;
+                margin: 0px;
+                padding: 7px 2px;
+            }
+            .center{
+                font-size: 10px;
+            }
+        }
+        @media screen and (max-width:372px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+            }
+            img {
+                width: 30px ;
+            }
+
+            .item {
+                font-size: 11px;
+                margin: 2px;
+            }
+
+            .srch-bar {
+                display: none;
+            }
+            .sr-img{
+                width: 200px;
+            }
+            .sr-para{
+                flex-direction: column;
+            }
+            .servi-topics{
+                font-size: 0.6rem;
+            }
+
+            .box {
+                width: 59%;
+                height: 300px;
+                padding: 9px;
+                margin: 16px;
+                justify-content: start;
+                /* display: flex; */
+            }
+
+            .box-img {
+                height: 100px;
+                width: 150px;
+                border-radius: 10px;
+                margin: 0px;
+                margin-top: 5px;
+                /* padding: 10px 10px; */
+
+            }
+
+            .box-para {
+                font-size: 12px;
+                margin: 0px;
+                padding: 7px 2px;
+            }
+            .center{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nvbr">
+        <nav class="navbar h-nav-resp">
+            <div class="logo v-class-resp">
+                <img src="Logo.jpg" alt="Error">
+            </div>
+            <div class="items v-class-resp">
+                <ul>
+                    <a href="project.html">
+                        <li class="item ">Home</li>
+                    </a>
+                    <a href="services.html">
+                        <li class="item ">Services</li>
+                    </a>
+                    <a href="about.html">
+                        <li class="item">About Me</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="item">Contact Us</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="srch-bar v-class-resp">
+                <input type="search">
+                <a href=""><button class="btn">Search</button></a>
+            </div>
+            <div class="hamburger">
+                <div class="hambur-line"></div>
+                <div class="hambur-line"></div>
+                <div class="hambur-line"></div>
+            </div>
+        </nav>
+    </section>
+    <section class="services-sec">
+        <h1 class="head">Our Services</h1>
+        <div class="sr-para">
+            <p class="para-ser">The core service of a programming tutorial website is providing step-by-step tutorials and guides on various programming languages, frameworks, tools, and concepts. These tutorials cater to different skill levels, from beginners to advanced programmers. <br>
+            Many programming tutorial websites also offer video lessons and courses. These can be especially helpful for learners who prefer visual and auditory learning experiences. <br>
+            Many programming tutorial websites offer a combination of free and paid content. While basic tutorials and resources are often free, more advanced or specialized content may require a subscription or one-time purchase. <br>
+            Websites should regularly update their content to keep up with evolving programming languages and technologies. <br>
+            Some websites offer mobile apps or responsive design to ensure learners can access tutorials and resources on smartphones and tablets.
+            </p>
+            <img src="servi3.jpg" class="sr-img" alt="">
+        </div>
+        <h6 class="servi-topics"> <u>My website providing you these following programming languages:-</u></h6>
+        <div class="topics">
+
+            <div class="box">
+                <img src="C++.webp" alt="" class="box-img">
+                <p class="box-para">C++ is an object-oriented programming (OOP) language that is viewed by many as the
+                    best language for creating large-scale applications. C++ is a superset of the C language. A related programming language, Java, is based on C++ but optimized for the distribution of program objects in a network such as the internet.&nbsp; <a href="https://youtu.be/oW2r0r_i5Ps?feature=shared" target="_blank">Start Now</a>
+                </p>
+            </div>
+            <div class="box">
+                <img src="java.jpeg" alt="" class="box-img">
+                <p class="box-para">Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use
+                today. Java is a multi-platform, object-oriented,  and network-centric language that can be used as a platform in itself.&nbsp;<a href="https://youtu.be/ntLJmHOJ0ME?feature=shared" target="_blank">Start Now</a>
+                </p>
+            </div>
+            <div class="box">
+                <img src="mysql.jpg" alt="" class="box-img">
+                <p class="box-para">MySQL is a relational database that uses structured query language. Relational
+                    databases are a type of database that uses a structure that allows us to identify and access the
+                    data in relation to another piece of data inside of the database. This format is often organized as tables.&nbsp;<a href="https://youtu.be/nnBMsGrwuUE?feature=shared" target="_blank">Start Now</a>
+                </p>
+            </div>
+            <div class="box">
+                <img src="py.jpg" alt="" class="box-img">
+                <p class="box-para">Python has a simple syntax similar to the English language. Python has syntax that
+                    allows developers to write programs with fewer lines than some other programming languages. Python
+                    runs on an interpreter system, meaning that code can be executed as soon as it is written. &nbsp;<a href="https://youtu.be/7wnove7K-ZQ?feature=shared" target="_blank">Start Now</a>
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.CodingArena.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

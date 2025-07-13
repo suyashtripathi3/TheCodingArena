@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: lavenderblush;
+        }
+
+        .navbar {
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar::before {
+            background-image: url("backgroundimg3.jpg");
+            content: "";
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 80px;
+            opacity: 0.99;
+            z-index: -1;
+        }
+
+        img {
+            width: 70px;
+            margin: 5px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        .item {
+            /* border: 2px solid green; */
+            display: inline-block;
+            margin: 5px 15px;
+            padding: 3px;
+            border-radius: 8px;
+            font-size: 22px;
+            color: white;
+            transition: all .2s ease-in-out;
+
+        }
+
+        .item:hover {
+            background-color: tomato;
+            color: black;
+            transform: scale(1.1);
+
+        }
+
+        .srch-bar {
+            float: right;
+            margin-left: 380px;
+        }
+
+        input {
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 2px;
+            background-color: bisque;
+            color: darkslategray;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 2px;
+            border-radius: 5px;
+            background-color: tomato;
+        }
+
+        .btn:hover {
+            /* background-color: burlywood; */
+            cursor: pointer;
+        }
+
+        .about-sec {
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .head {
+            font-size: 2.5rem;
+            margin: 20px;
+        }
+
+        .ab-para {
+            /* border: 2px solid red; */
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .my {
+            border: 3px solid tomato;
+            border-radius: 10px;
+            width: 250px;
+            height: 400px;
+            /* position: sticky; */
+            text-align: center;
+            border-style: dashed;
+        }
+
+        .para {
+            /* border: 2px solid darkgoldenrod; */
+            padding: 10px 10px;
+            width: 80%;
+        }
+
+        .center {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            height: 40px;
+        }
+
+        /* Responsive CSS */
+        @media screen and (max-width:1334px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 8px;
+                font-size: 22px;
+            }
+
+            .srch-bar {
+                margin-left: 330px;
+            }
+        }
+
+        @media screen and (max-width:1220px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 8px;
+                font-size: 20px;
+            }
+
+            .srch-bar {
+                margin-left: 260px;
+            }
+        }
+
+        @media screen and (max-width:1120px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 6px;
+                font-size: 18px;
+            }
+
+            .srch-bar {
+                margin-left: 190px;
+            }
+        }
+        @media screen and (max-width:1010px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+            }
+            ul{
+                padding-left: 5px;
+            }
+            img {
+                width: 68px ;
+            }
+
+            .item {
+                font-size: 16px;
+            }
+
+            .srch-bar {
+                display: none;
+            }
+            .head{
+                font-size: 2.1rem;
+            }
+            .sr-para{
+                flex-direction: column;
+            }
+            .servi-topics{
+                font-size: 1.3rem;
+            }
+            .ab-para{
+                flex-direction: column;
+            }
+            .para{
+                width: 97%;
+            }
+
+        }
+        @media screen and (max-width:500px) {
+            .my{
+                width: 220px;
+                height: 350px;
+            }
+            .item{
+                font-size: 13px;
+            }
+            img{
+                width: 60px;
+            }
+            .center{
+                font-size: 14px;
+            }
+        }
+        @media screen and (max-width:358px) {
+            .navbar{
+                margin-top: 10px;
+            }
+            .my{
+                width: 220px;
+                height: 350px;
+            }
+            .item{
+                font-size: 10px;
+                margin: 3px;
+            }
+            img{
+                width: 40px;
+
+            }
+            .center{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.jpg" alt="Error">
+        </div>
+        <div class="items">
+            <ul>
+                <a href="project.html">
+                    <li class="item">Home</li>
+                </a>
+                <a href="services.html">
+                    <li class="item">Services</li>
+                </a>
+                <a href="about.html">
+                    <li class="item">About Me</li>
+                </a>
+                <a href="contact.html">
+                    <li class="item">Contact Us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="srch-bar">
+            <input type="search">
+            <a href=""><button class="btn">Search</button></a>
+        </div>
+    </nav>
+    <section class="about-sec">
+        <h1 class="head"> About Me</h1>
+        <div class="ab-para">
+            <img src="Snapchat-541579293.jpg" alt="" class="my">
+            <p class="para">Hello! Friends, I am Suyash Tripathi.Passionate Computer Science Engineering student with a
+                strong drive for innovation and a thirst for knowledge. <br> I am dedicated to pushing the boundaries of
+                technology and leveraging it to solve real-world problems. <br><br>
+
+                💻 Technical Skills: Proficient in programming languages such as Java, C++, Python, and JavaScript.
+                Experienced in web development, data structures, algorithms, and software engineering principles.
+                Familiar with machine learning, artificial intelligence, and cloud computing. <br><br>
+
+                🎓 Education: Pursuing a Bachelor's/Master's degree in Computer Science Engineering from Baba Banda
+                Singh Bahadur Engineering College. Maintaining a stellar academic record with a focus on staying
+                up-to-date with the latest advancements in the field.<br><br>
+
+                🏆 Achievements: Recognized for App Lab Worshop and got a certificate, Summer Sraining in college and
+                got a ertificate, also participate in Flutter App Development and IIT BOMBAY SPOKEN TUTORIAL and got
+                certificates in both, showcasing my commitment to excellence. Participated in coding competitions and
+                hackathons, consistently ranking among the top performers.<br><br>
+
+                🎯 Career Goals: Aspiring to contribute to the development of groundbreaking software solutions that
+                positively impact society. Seeking opportunities to work with innovative companies where I can grow as a
+                professional and make a meaningful contribution.<br><br>
+
+                🌟 Let's Connect: I'm eager to connect with fellow tech enthusiasts, recruiters, and professionals in
+                the field. Feel free to reach out for collaboration, career opportunities, or to discuss exciting
+                advancements in the world of computer science.<br><br>
+
+                Thank you for taking the time to read my profile. I am looking forward to connecting with professionals
+                in the industry and exploring potential career opportunities.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.CodingArena.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: lavenderblush;
+        }
+
+        .navbar {
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar::before {
+            background-image: url("backgroundimg3.jpg");
+            content: "";
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 80px;
+            opacity: 0.99;
+            z-index: -1;
+        }
+
+        img {
+            width: 70px;
+            margin: 5px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        .item {
+            /* border: 2px solid green; */
+            display: inline-block;
+            margin: 5px 15px;
+            padding: 3px;
+            border-radius: 8px;
+            font-size: 22px;
+            color: white;
+            transition: all .2s ease-in-out;
+        }
+
+        .item:hover {
+            background-color: tomato;
+            color: black;
+            transform: scale(1.1);
+
+        }
+
+        .srch-bar {
+            float: right;
+            margin-left: 380px;
+        }
+
+        input {
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 2px;
+            background-color: bisque;
+            color: darkslategray;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 2px;
+            border-radius: 5px;
+            background-color: tomato;
+        }
+
+        .btn:hover {
+            /* background-color: burlywood; */
+            cursor: pointer;
+        }
+
+        
+
+        .contact-form {
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .head {
+            font-size: 2.5em;
+            margin: 0px;
+        }
+
+        .cntct-frm {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: 20px;
+        }
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        .input {
+            font-size: 1.5rem;
+
+        }
+
+        #Message {
+            font-size: 1.5rem;
+            background-color: bisque;
+            border-radius: 5px;
+
+        }
+
+        .con-btn {
+            font-size: 1.1rem;
+            padding: 8px;
+            border-radius: 6px;
+            background-color: tomato;
+        }
+
+        .con-btn:hover {
+            cursor: pointer;
+        }
+        #con-details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .details{
+            display: flex;
+            margin-top: 15px;
+            padding: 0px 10px;
+            /* border: 2px solid black; */
+            border-radius: 15px;
+            background: linear-gradient(120deg, rgb(214, 107, 88) 40%, lightsalmon 60%);
+            width: 85%;
+            height: 150px;
+            align-items: center;
+            justify-content: center;
+        }
+        #location{
+            margin: 15px 5px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .center {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            height: 40px;
+        }
+
+        /* Responsive CSS */
+        @media screen and (max-width:1334px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 8px;
+                font-size: 22px;
+            }
+
+            .srch-bar {
+                margin-left: 330px;
+            }
+        }
+
+        @media screen and (max-width:1220px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 8px;
+                font-size: 20px;
+            }
+
+            .srch-bar {
+                margin-left: 260px;
+            }
+        }
+
+        @media screen and (max-width:1120px) {
+
+            img {
+                padding: 0xp;
+                margin: 6px;
+                margin-right: 0px;
+            }
+
+            .item {
+                padding: 3px;
+                margin: 6px;
+                font-size: 18px;
+            }
+
+            .srch-bar {
+                margin-left: 190px;
+            }
+        }
+        @media screen and (max-width:1010px) {
+            .navbar {
+                display: flex;
+                justify-content: center;
+            }
+            ul{
+                padding-left: 5px;
+            }
+            img {
+                width: 68px ;
+            }
+            
+            .item {
+                font-size: 16px;
+            }
+            
+            .srch-bar {
+                display: none;
+            }
+            .head{
+                font-size: 2.1rem;
+            }
+            .sr-para{
+                flex-direction: column;
+            }
+            .servi-topics{
+                font-size: 1.3rem;
+            }
+            .ab-para{
+                flex-direction: column;
+            }
+            .para{
+                width: 97%;
+            }
+            
+        }
+        @media screen and (max-width:700px) {
+            label{
+                font-size: 1.2rem;
+            }
+            .input{
+                font-size: 1.2rem;
+            }
+            #Message{
+                height: 150px;
+                font-size: 1.2rem;
+            }
+            .con-btn{
+                font-size: 1rem;
+                border-color: tomato;
+                padding: 6px;
+            }
+            .center{
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width:450px) {
+            label{
+                font-size: 1rem;
+            }
+            .input{
+                font-size: 1rem;
+            }
+            #Message{
+                height: 120px;
+                font-size: 1rem;
+            }
+            .item{
+                font-size: 13px;
+                margin: 3px;
+            }
+            img{
+                width: 60px;
+            }
+            .con-btn{
+                font-size: 0.7rem;
+                border-color: tomato;
+                padding: 4px;
+            }
+            .center{
+                font-size: 11px;
+            }
+        }
+        @media screen and (max-width:333px) {
+            .navbar{
+                margin-top: 10px;
+            }
+            img{
+                width: 40px;
+            }
+            .item{
+                font-size: 10px;
+                margin: 1px;
+            }
+            .details{
+            font-size: 13px;
+            width: 85%;
+            height: 150px;
+        }
+            label{
+                font-size: 11px;
+
+            }
+            .input{
+                font-size: 11px;
+            }
+            #Message{
+                height: 60px;
+                font-size: 9px;
+            }
+            .center{
+                font-size: 10px;
+            }
+        }        
+        </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.jpg" alt="Error">
+        </div>
+        <div class="items">
+            <ul>
+                <a href="project.html">
+                    <li class="item">Home</li>
+                </a>
+                <a href="services.html">
+                    <li class="item">Services</li>
+                </a>
+                <a href="about.html">
+                    <li class="item">About Me</li>
+                </a>
+                <a href="contact.html">
+                    <li class="item">Contact Us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="srch-bar">
+            <input type="search">
+            <a href=""><button class="btn">Search</button></a>
+        </div>
+    </nav>
+    <section class="contact-form">
+        <h1 class="head"> Contact Me</h1>
+        <div class="cntct-frm">
+            <label for="">Name: </label>
+            <input class="input" type="text" placeholder="Enter Your Name">
+            <label for="">E-mail: </label>
+            <input class="input" type="email" placeholder="Enter Your E-mail">
+            <label for="">Phone: </label>
+            <input class="input" type="number" placeholder="Enter Your Phone Number">
+            <label for="">Message: </label>
+            <textarea name="Message" id="Message" placeholder="Enter Your Message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="frm-btn">
+            
+            <a href=""><button class="con-btn">Submit Now</button></a>
+            <a href=""><button class="con-btn">Reset Now</button></a>
+        </div>
+    </section>
+    <section id="con-details">
+        <div class="details">
+            <p class="con">
+                <b>Name:</b> Suyash Tripathi <br>
+                <b>E-mail:</b> suyatripathi03@gmail.com <br>
+                <b>P.Number:</b> 8054696765, 8299447843 <br>
+                <b>LinkedIn Id:</b> <a href="https://www.linkedin.com/in/suyash-tripathi-b0156b24b/" target="_blank">Click here</a> <br>
+                <b>GitHub Id:</b> <a href="https://github.com/Suyash1920" target="_blank">Click here</a><br>
+                <b>Instagram Id:</b> <a href="https://instagram.com/yashtiwari._.13?igshid=NzZlODBkYWE4Ng==" target="_blank">Click here</a>
+            </p>
+        </div>
+    </section>
+    <h1 class="head" style="text-align: center; font-size: 2rem; margin: 10px 0px;">My Location</h1>
+    <section id="location">
+        <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.733350977055!2d77.2100710362977!3d28.64707044209732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd6a811b4995%3A0x6342badb2c227195!2sGali%20Number%206%2C%20New%20Delhi%2C%20Delhi%20110055!5e0!3m2!1sen!2sin!4v1696862048026!5m2!1sen!2sin" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>  
+    <footer>
+        <div class="center">
+            Copyright &copy; www.CodingArena.com. All rights reserved!
+        </div>
+
+    </footer>
+</body>
+
+</html>
